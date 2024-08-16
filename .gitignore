@@ -24,3 +24,5 @@ hs_err_pid*
 replay_pid*
 /ImplementacaoCalculadora/nbproject/private/
 /ImplementacaoCalculadora/build/
+/SistemaBancario/dist/
+/SistemaBancario/build/

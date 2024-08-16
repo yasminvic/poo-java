@@ -27,7 +27,6 @@ public class App {
             System.out.println("Digite o valor do número 2:");
             calc.setNum2(scan.nextInt());
             
-
             switch(opcao){
                 case 1:
                     System.out.println("\no Resultado da soma: " + calc.somar());
