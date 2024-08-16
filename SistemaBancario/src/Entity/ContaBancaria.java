@@ -27,25 +27,23 @@ public class ContaBancaria {
      * @param valor
      * @return metodo depositar
      */
-    public String depositar(double valor){
-        if(valor < 0){
-            return "Não é possível depositar valores negativos!";
+    public void depositar(double valor){
+        if(valor <= 0){
+            throw new IllegalArgumentException("Não é possível depositar valores negativos!";
         }
         this.saldo += valor;
-        return "Depósito realizado com sucesso!";
     }
     
-    public String sacar(double valor){
+    public void sacar(double valor){
         if(valor > this.saldo){
-            return "Saque não efetuado. Valor de saque maior que o saldo atual!";
+            throw new IllegalArgumentException("Saque não efetuado. Valor de saque maior que o saldo atual!");
         }
         
         if(valor < 0){
-            return "Não é possível depositar valores negativos!";
+            throw new IllegalArgumentException("Não é possível depositar valores negativos!");
         }
         
         this.saldo -= valor;
-        return "Saque realizado com sucesso!";
     }
     /**
      *
@@ -53,15 +51,7 @@ public class ContaBancaria {
      * @param contaDestino
      * @return
      */
-    public String transferir(double valor, ContaBancaria contaDestino){
-        if(valor < 0){
-         return "Não é possível depositar valores negativos!";
-        }
-        
-        if(valor > this.saldo){
-            return "Saque não efetuado. Valor de saque maior que o saldo atual!";
-        }
-        
+    public String transferir(double valor, ContaBancaria contaDestino){        
         this.sacar(valor);
         contaDestino.depositar(valor);
         
