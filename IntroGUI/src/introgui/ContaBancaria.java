@@ -1,4 +1,4 @@
-package introgui.joptionpane;
+package IntroGui;
 
 public class ContaBancaria {
     private String titular;
