@@ -1,4 +1,4 @@
-package IntroGui;
+package introgui;
 
 public class ContaBancaria {
     private String titular;

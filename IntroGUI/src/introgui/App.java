@@ -1,8 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package IntroGui;
+package introgui;
 
 import javax.swing.JOptionPane;
 
@@ -40,10 +36,20 @@ public class App {
                         JOptionPane.showMessageDialog(null, "Conta já cadastrada!");
                     }
                     break;
+                    
                 case 2:
                     if(realizarSaque()){
                         JOptionPane.showMessageDialog(null, "Saque realizado com sucesso!");
                     }
+                
+                case 3:
+                	if(!realizarDeposito()) {
+                		JOptionPane.showMessageDialog(null, "Erro ao depositar. A conta informada não existe!", "Depósito", 
+                				JOptionPane.ERROR_MESSAGE);
+                	}
+                	
+                	JOptionPane.showMessageDialog(null, "Depósito realizado com sucesso!", "Depósito", JOptionPane.OK_OPTION);
+                	break;
                 case 4: 
                     executar = false;
                     break;
@@ -83,6 +89,19 @@ public class App {
         }
         
         return null;
+    }
+    
+    public static boolean realizarDeposito() {
+    	String num = JOptionPane.showInputDialog(null, "Informe o número da conta: ");
+    	ContaBancaria conta = buscar(num);
+    	
+    	if(conta == null) {
+    		return false;
+    	}
+    	
+    	double valor = Double.parseDouble(JOptionPane.showInputDialog(null, "Informe o valor do depósito"));
+    	conta.depositar(valor);
+    	return true;
     }
     
     public static boolean realizarSaque(){
