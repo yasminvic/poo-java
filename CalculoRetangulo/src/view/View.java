@@ -5,6 +5,14 @@
 package view;
 
 import model.Retangulo;
+import javax.swing.GroupLayout.Alignment;
+import javax.swing.GroupLayout;
+import javax.swing.JTextField;
+import java.awt.Dimension;
+import java.awt.Color;
+import java.awt.Font;
+import javax.swing.border.LineBorder;
+import javax.swing.LayoutStyle.ComponentPlacement;
 
 /**
  *
@@ -31,12 +39,15 @@ public class View extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        txtComp = new javax.swing.JTextField();
         txtAltura = new javax.swing.JTextField();
         btnLimpar = new javax.swing.JButton();
         btnCalcular = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
+        jPanel1.setBorder(new LineBorder(new Color(0, 0, 0)));
+        jPanel1.setBackground(new Color(0, 128, 255));
         lbTitulo = new javax.swing.JLabel();
+        lbTitulo.setForeground(new Color(255, 255, 255));
+        lbTitulo.setFont(new Font("Tahoma", Font.BOLD, 15));
         lbPerimetro = new javax.swing.JLabel();
         lbArea = new javax.swing.JLabel();
 
@@ -47,8 +58,6 @@ public class View extends javax.swing.JFrame {
         jLabel1.setText("Comprimento:");
 
         jLabel2.setText("Altura:");
-
-        txtComp.setText("comp");
 
         txtAltura.setMinimumSize(new java.awt.Dimension(100, 100));
         txtAltura.addActionListener(new java.awt.event.ActionListener() {
@@ -75,75 +84,77 @@ public class View extends javax.swing.JFrame {
         lbTitulo.setText("Informe o valor da altura e do perímetro");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lbTitulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lbArea)
-                            .addComponent(lbPerimetro))))
-                .addGap(173, 173, 173))
+        	jPanel1Layout.createParallelGroup(Alignment.LEADING)
+        		.addGroup(jPanel1Layout.createSequentialGroup()
+        			.addGap(29)
+        			.addGroup(jPanel1Layout.createParallelGroup(Alignment.LEADING)
+        				.addComponent(lbArea)
+        				.addComponent(lbPerimetro))
+        			.addGap(173))
+        		.addGroup(jPanel1Layout.createSequentialGroup()
+        			.addGap(31)
+        			.addComponent(lbTitulo, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        			.addGap(134))
         );
         jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(lbTitulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
-                .addComponent(lbPerimetro)
-                .addGap(18, 18, 18)
-                .addComponent(lbArea)
-                .addGap(160, 160, 160))
+        	jPanel1Layout.createParallelGroup(Alignment.TRAILING)
+        		.addGroup(jPanel1Layout.createSequentialGroup()
+        			.addGap(16)
+        			.addComponent(lbTitulo, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        			.addPreferredGap(ComponentPlacement.RELATED)
+        			.addComponent(lbPerimetro)
+        			.addGap(18)
+        			.addComponent(lbArea)
+        			.addGap(160))
         );
+        jPanel1.setLayout(jPanel1Layout);
+        
+        txtComp = new JTextField();
+        txtComp.setMinimumSize(new Dimension(100, 100));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(107, 107, 107)
-                        .addComponent(btnCalcular)
-                        .addGap(53, 53, 53)
-                        .addComponent(btnLimpar))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addGap(18, 18, 18)
-                                .addComponent(txtAltura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(113, 113, 113)
-                                .addComponent(jLabel1)
-                                .addGap(18, 18, 18)
-                                .addComponent(txtComp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(213, Short.MAX_VALUE))
+        	layout.createParallelGroup(Alignment.LEADING)
+        		.addGroup(layout.createSequentialGroup()
+        			.addGroup(layout.createParallelGroup(Alignment.LEADING)
+        				.addGroup(layout.createSequentialGroup()
+        					.addGap(107)
+        					.addComponent(btnCalcular)
+        					.addGap(53)
+        					.addComponent(btnLimpar))
+        				.addGroup(layout.createSequentialGroup()
+        					.addGap(22)
+        					.addGroup(layout.createParallelGroup(Alignment.TRAILING)
+        						.addComponent(jPanel1, Alignment.LEADING, 0, 0, Short.MAX_VALUE)
+        						.addGroup(Alignment.LEADING, layout.createSequentialGroup()
+        							.addComponent(jLabel2)
+        							.addGap(18)
+        							.addComponent(txtAltura, GroupLayout.PREFERRED_SIZE, 102, GroupLayout.PREFERRED_SIZE)
+        							.addGap(18)
+        							.addComponent(jLabel1)
+        							.addGap(18)
+        							.addComponent(txtComp, GroupLayout.PREFERRED_SIZE, 102, GroupLayout.PREFERRED_SIZE)))))
+        			.addContainerGap(231, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(71, 71, 71)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(txtAltura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1)
-                    .addComponent(txtComp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(42, 42, 42)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCalcular)
-                    .addComponent(btnLimpar))
-                .addGap(18, 18, 18)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(28, Short.MAX_VALUE))
+        	layout.createParallelGroup(Alignment.LEADING)
+        		.addGroup(layout.createSequentialGroup()
+        			.addGap(71)
+        			.addGroup(layout.createParallelGroup(Alignment.BASELINE)
+        				.addComponent(jLabel2)
+        				.addComponent(txtAltura, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+        				.addComponent(jLabel1)
+        				.addComponent(txtComp, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+        			.addGap(42)
+        			.addGroup(layout.createParallelGroup(Alignment.BASELINE)
+        				.addComponent(btnCalcular)
+        				.addComponent(btnLimpar))
+        			.addGap(18)
+        			.addComponent(jPanel1, GroupLayout.PREFERRED_SIZE, 144, GroupLayout.PREFERRED_SIZE)
+        			.addContainerGap(115, Short.MAX_VALUE))
         );
+        getContentPane().setLayout(layout);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -222,6 +233,5 @@ public class View extends javax.swing.JFrame {
     private javax.swing.JLabel lbPerimetro;
     private javax.swing.JLabel lbTitulo;
     private javax.swing.JTextField txtAltura;
-    private javax.swing.JTextField txtComp;
-    // End of variables declaration//GEN-END:variables
+    private JTextField txtComp;
 }
