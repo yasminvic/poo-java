@@ -4,10 +4,6 @@
  */
 package model;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -106,14 +102,65 @@ public class PontoTest {
      * Test of identificarQuadrante method, of class Ponto.
      */
     @Test
-    public void testIdentificarQuadrante() {
-        System.out.println("identificarQuadrante");
+    public void IdentificarQuadranteNenhumTeste() {
+        //ARRANGE
         Ponto instance = new Ponto();
-        Quadrante expResult = null;
+        Quadrante expResult = Quadrante.NENHUM;
+        
+        //ACT
         Quadrante result = instance.identificarQuadrante();
+        
+        //ASSERT
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    }
+    
+    @Test
+    public void IdentificarQuadrantePrimeiroTeste(){
+        //ARRANGE    
+        Ponto instace = new Ponto(10, 10);
+        
+        //ACT
+        Quadrante result = instace.identificarQuadrante();
+        
+        //ASSERT
+        assertEquals(Quadrante.PRIMEIRO, result);
+    }
+    
+    @Test
+    public void IdentificarQuadranteSegundoTeste(){
+        //ARRANGE    
+        Ponto instace = new Ponto(-10, 10);
+        
+        //ACT
+        Quadrante result = instace.identificarQuadrante();
+        
+        //ASSERT
+        assertEquals(Quadrante.SEGUNDO, result);
+    }
+    
+    @Test
+    public void IdentificarQuadranteTerceiroTeste(){
+        //ARRANGE    
+        Ponto instace = new Ponto(-10, -10);
+        
+        //ACT
+        Quadrante result = instace.identificarQuadrante();
+        
+        //ASSERT
+        assertEquals(Quadrante.TERCEIRO, result);
+    }
+    
+    
+    @Test
+    public void IdentificarQuadranteQuartoTeste(){
+        //ARRANGE
+        Ponto p = new Ponto(10, -10);
+        
+        //ACT
+        Quadrante result = p.identificarQuadrante();
+        
+        //ASSERT
+        assertEquals(Quadrante.QUARTO, result);
     }
 
     /**
@@ -121,14 +168,11 @@ public class PontoTest {
      */
     @Test
     public void testCalcularDistancia() {
-        System.out.println("calcularDistancia");
-        Ponto outroPonto = null;
-        Ponto instance = new Ponto();
-        Double expResult = null;
+        Ponto outroPonto = new Ponto(10, 10);
+        Ponto instance = new Ponto(20, 10);
+        Double expResult = 10d;
         Double result = instance.calcularDistancia(outroPonto);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
