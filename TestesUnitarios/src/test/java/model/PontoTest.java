@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class PontoTest {
     
     public PontoTest() {
-    }   
+    }
 
     /**
      * Test of getX method, of class Ponto.
