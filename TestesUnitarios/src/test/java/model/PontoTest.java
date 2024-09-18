@@ -21,13 +21,10 @@ public class PontoTest {
      */
     @Test
     public void testGetX() {
-        System.out.println("getX");
-        Ponto instance = new Ponto();
-        int expResult = 0;
-        int result = instance.getX();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        Ponto p = new Ponto();
+        p.setX(10);
+        int result = p.getX();
+        assertEquals(10, result);
     }
 
     /**

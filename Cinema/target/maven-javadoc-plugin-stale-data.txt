@@ -1,0 +1,51 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-source
+'21'
+-sourcepath
+'C:/Users/yvasouza/Documents/NetBeansProjects/Cinema/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2024. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/yvasouza/Documents/NetBeansProjects/Cinema/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Cinema 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'Cinema 1.0-SNAPSHOT API'
+com.aula.poo.cinema
+model
+view
+C:\Users\yvasouza\Documents\NetBeansProjects\Cinema\src\main\java = 1726092690360
+C:\Users\yvasouza\Documents\NetBeansProjects\Cinema\target\reports\apidocs\allclasses-index.html = 1726095829075
+C:\Users\yvasouza\Documents\NetBeansProjects\Cinema\target\reports\apidocs\allpackages-index.html = 1726095829078
+C:\Users\yvasouza\Documents\NetBeansProjects\Cinema\target\reports\apidocs\copy.svg = 1726095829105
+C:\Users\yvasouza\Documents\NetBeansProjects\Cinema\target\reports\apidocs\element-list = 1726095828989
+C:\Users\yvasouza\Documents\NetBeansProjects\Cinema\target\reports\apidocs\help-doc.html = 1726095829100
+C:\Users\yvasouza\Documents\NetBeansProjects\Cinema\target\reports\apidocs\index-all.html = 1726095829092
+C:\Users\yvasouza\Documents\NetBeansProjects\Cinema\target\reports\apidocs\index.html = 1726095829064
+C:\Users\yvasouza\Documents\NetBeansProjects\Cinema\target\reports\apidocs\link.svg = 1726095829107
+C:\Users\yvasouza\Documents\NetBeansProjects\Cinema\target\reports\apidocs\member-search-index.js = 1726095829083
+C:\Users\yvasouza\Documents\NetBeansProjects\Cinema\target\reports\apidocs\module-search-index.js = 1726095829079
+C:\Users\yvasouza\Documents\NetBeansProjects\Cinema\target\reports\apidocs\overview-summary.html = 1726095829096
+C:\Users\yvasouza\Documents\NetBeansProjects\Cinema\target\reports\apidocs\overview-tree.html = 1726095829061
+C:\Users\yvasouza\Documents\NetBeansProjects\Cinema\target\reports\apidocs\package-search-index.js = 1726095829080
+C:\Users\yvasouza\Documents\NetBeansProjects\Cinema\target\reports\apidocs\script.js = 1726095829104
+C:\Users\yvasouza\Documents\NetBeansProjects\Cinema\target\reports\apidocs\search-page.js = 1726095829110
+C:\Users\yvasouza\Documents\NetBeansProjects\Cinema\target\reports\apidocs\search.html = 1726095829094
+C:\Users\yvasouza\Documents\NetBeansProjects\Cinema\target\reports\apidocs\search.js = 1726095829109
+C:\Users\yvasouza\Documents\NetBeansProjects\Cinema\target\reports\apidocs\serialized-form.html = 1726095829034
+C:\Users\yvasouza\Documents\NetBeansProjects\Cinema\target\reports\apidocs\stylesheet.css = 1726095829102
+C:\Users\yvasouza\Documents\NetBeansProjects\Cinema\target\reports\apidocs\tag-search-index.js = 1726095829084
+C:\Users\yvasouza\Documents\NetBeansProjects\Cinema\target\reports\apidocs\type-search-index.js = 1726095829082

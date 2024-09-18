@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="model.PontoTest" time="0.044" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="model.IngressoCinemaTest" time="0.048" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\yvasouza\Documents\poo-java\TestesUnitarios\target\test-classes;C:\Users\yvasouza\Documents\poo-java\TestesUnitarios\target\classes;C:\Users\yvasouza\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\yvasouza\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\yvasouza\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\yvasouza\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\yvasouza\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\yvasouza\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\yvasouza\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;"/>
+    <property name="java.class.path" value="C:\Users\yvasouza\Documents\NetBeansProjects\Cinema\target\test-classes;C:\Users\yvasouza\Documents\NetBeansProjects\Cinema\target\classes;C:\Users\yvasouza\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\yvasouza\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\yvasouza\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\yvasouza\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\yvasouza\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\yvasouza\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\yvasouza\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
     <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,10 +15,10 @@
     <property name="user.country" value="BR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java21\bin"/>
-    <property name="sun.java.command" value="C:\Users\yvasouza\AppData\Local\Temp\surefire7346397866457896113\surefirebooter-20240905205238371_3.jar C:\Users\yvasouza\AppData\Local\Temp\surefire7346397866457896113 2024-09-05T20-52-38_242-jvmRun1 surefire-20240905205238371_1tmp surefire_0-20240905205238371_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\yvasouza\AppData\Local\Temp\surefire17776690211067178493\surefirebooter-20240911200242191_3.jar C:\Users\yvasouza\AppData\Local\Temp\surefire17776690211067178493 2024-09-11T20-02-42_087-jvmRun1 surefire-20240911200242191_1tmp surefire_0-20240911200242191_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="model.PontoTest#testGetX"/>
-    <property name="surefire.test.class.path" value="C:\Users\yvasouza\Documents\poo-java\TestesUnitarios\target\test-classes;C:\Users\yvasouza\Documents\poo-java\TestesUnitarios\target\classes;C:\Users\yvasouza\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\yvasouza\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\yvasouza\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\yvasouza\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\yvasouza\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\yvasouza\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\yvasouza\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;"/>
+    <property name="test" value="model.IngressoCinemaTest"/>
+    <property name="surefire.test.class.path" value="C:\Users\yvasouza\Documents\NetBeansProjects\Cinema\target\test-classes;C:\Users\yvasouza\Documents\NetBeansProjects\Cinema\target\classes;C:\Users\yvasouza\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\yvasouza\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\yvasouza\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\yvasouza\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\yvasouza\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\yvasouza\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\yvasouza\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\yvasouza"/>
     <property name="user.language" value="pt"/>
@@ -26,12 +26,12 @@
     <property name="java.version.date" value="2024-07-16"/>
     <property name="java.home" value="C:\Program Files\Java21"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\yvasouza\Documents\poo-java\TestesUnitarios"/>
+    <property name="basedir" value="C:\Users\yvasouza\Documents\NetBeansProjects\Cinema"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\yvasouza\AppData\Local\Temp\surefire7346397866457896113\surefirebooter-20240905205238371_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\yvasouza\AppData\Local\Temp\surefire17776690211067178493\surefirebooter-20240911200242191_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.4+7-LTS"/>
@@ -48,7 +48,7 @@
     <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
     <property name="java.io.tmpdir" value="C:\Users\yvasouza\AppData\Local\Temp\"/>
     <property name="java.version" value="21.0.4"/>
-    <property name="user.dir" value="C:\Users\yvasouza\Documents\poo-java\TestesUnitarios"/>
+    <property name="user.dir" value="C:\Users\yvasouza\Documents\NetBeansProjects\Cinema"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
@@ -61,5 +61,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testGetX" classname="model.PontoTest" time="0.027"/>
+  <testcase name="VerificaDescontoSegundaQuandoEstudanteTeste" classname="model.IngressoCinemaTest" time="0.026"/>
+  <testcase name="VerificaDescontoSabadoTeste" classname="model.IngressoCinemaTest" time="0.001"/>
+  <testcase name="VerificaDescontoQuartaQuandoEstudanteTeste" classname="model.IngressoCinemaTest" time="0.001"/>
+  <testcase name="VerificaDescontoSabadoQuandoEstudanteTeste" classname="model.IngressoCinemaTest" time="0.0"/>
+  <testcase name="VerificaDescontoQuartaTeste" classname="model.IngressoCinemaTest" time="0.0"/>
 </testsuite>

@@ -63,15 +63,10 @@ public class Ponto {
     }
     
     public Double calcularDistancia(Ponto outroPonto){
-        Double subtracaoX = Math.pow((outroPonto.x - this.x), 2);
-        Double subtracaoY = Math.pow((outroPonto.y - this.y), 2);
-        
-        Double distancia = Math.sqrt(subtracaoX + subtracaoY);
-        
-        return distancia;
+        return calcularDistancia(this, outroPonto);
     }
     
-    public Double calcularDistanciaEntreDoisPontos(Ponto ponto1, Ponto ponto2){
+    public static Double calcularDistancia(Ponto ponto1, Ponto ponto2){
         Double subtracaoX = Math.pow((ponto2.x - ponto1.x), 2);
         Double subtracaoY = Math.pow((ponto2.y - ponto1.y), 2);
         
