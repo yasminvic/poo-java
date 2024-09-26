@@ -31,6 +31,9 @@ public class Bairro {
     }
 
     public void setCoeficienteIptu(double coeficienteIptu) {
+        if(coeficienteIptu < 0){
+            throw new IllegalArgumentException("Defina um valor válido para o coeficiente");
+        }       
         this.coeficienteIptu = coeficienteIptu;
     }
     
