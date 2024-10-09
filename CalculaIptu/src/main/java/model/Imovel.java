@@ -16,7 +16,7 @@ public class Imovel {
 
     public Imovel(String endereco, int area) {
         setEndereco(endereco);
-        setArea(area);
+        setArea(area);     
     }
 
     public String getEndereco() {
